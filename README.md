@@ -1,21 +1,24 @@
-# PollutionApplication
+# XProf demo configuration guide
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `pollution_application` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:pollution_application, "~> 0.1.0"}
-  ]
-end
+First run python script to generate test data:
+```sh
+python3 data_gen.py > bigdata.csv
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/pollution_application](https://hexdocs.pm/pollution_application).
-
+Then get dependencies from mix a try running the app:
+```sh
+mix deps.get
+iex -S mix
+```
+There might be a linker error due to hdr_histogram using obsolete(?) lib: liberl-interface.
+The solution for me was to open the appropriate Makefile:
+```sh
+emacs ./deps/hdr_histogram/c_src/Makefile
+```
+and change one line:
+```Makefile
+LDLIBS += -L $(ERL_INTERFACE_LIB_DIR) -lerl_interface -lei
+```
+to:
+```Makefile
+LDLIBS += -lei
+```
