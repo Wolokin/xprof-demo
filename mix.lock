@@ -1,0 +1,10 @@
+%{
+  "cowboy": {:hex, :cowboy, "2.8.0", "f3dc62e35797ecd9ac1b50db74611193c29815401e53bac9a5c0577bd7bc667d", [:rebar3], [{:cowlib, "~> 2.9.1", [hex: :cowlib, repo: "hexpm", optional: false]}, {:ranch, "~> 1.7.1", [hex: :ranch, repo: "hexpm", optional: false]}], "hexpm", "4643e4fba74ac96d4d152c75803de6fad0b3fa5df354c71afdd6cbeeb15fac8a"},
+  "cowlib": {:hex, :cowlib, "2.9.1", "61a6c7c50cf07fdd24b2f45b89500bb93b6686579b069a89f88cb211e1125c78", [:rebar3], [], "hexpm", "e4175dc240a70d996156160891e1c62238ede1729e45740bdd38064dad476170"},
+  "hdr_histogram": {:hex, :hdr_histogram, "0.4.0", "3ddfd91d556441491aa00a42b0edf98a9f27cb328a7ee6ae78679c746a171f2e", [:rebar3], [], "hexpm", "7db49e8d71e031792f2820e3d33fa8e2d2152719b862f6e14d39a8d52b5581d4"},
+  "jsone": {:hex, :jsone, "1.5.7", "036ec290bf3b2b3348b2eec199a0fcda62ce296ab6b736a403a6a440c5203618", [:rebar3], [], "hexpm", "5f146cbf953469667eee145fb066d6ee6b9b181bcfd547295317526e7464d732"},
+  "ranch": {:hex, :ranch, "1.7.1", "6b1fab51b49196860b733a49c07604465a47bdb78aa10c1c16a3d199f7f8c881", [:rebar3], [], "hexpm", "451d8527787df716d99dc36162fca05934915db0b6141bbdac2ea8d3c7afc7d7"},
+  "xprof": {:hex, :xprof, "2.0.0-rc.5", "59bac6759d899b1323d2aca2f9a5341d159b54c069700ebbcd5d6bffd6fe1825", [:rebar3], [{:xprof_core, "2.0.0-rc.5", [hex: :xprof_core, repo: "hexpm", optional: false]}, {:xprof_gui, "2.0.0-rc.5", [hex: :xprof_gui, repo: "hexpm", optional: false]}], "hexpm", "2b062e1ecc9abde1ea0ed46302a9a1a75050753133e79b17935ec00ea61e35be"},
+  "xprof_core": {:hex, :xprof_core, "2.0.0-rc.5", "e3a731d62aab5a196a8a5d95c2bf9e225109e856c06fa56a0161323f23e85b3b", [:rebar3], [{:hdr_histogram, "~> 0.3", [hex: :hdr_histogram, repo: "hexpm", optional: false]}], "hexpm", "fc65368d79cca5831881aff98cbc19902eaf6abd48c0fba3b8e5510c4580688c"},
+  "xprof_gui": {:hex, :xprof_gui, "2.0.0-rc.5", "ef9076e5c3ce1264d861643229398c69f1d4c8fbd8523a0c588effebc58ff7d8", [:rebar3], [{:cowboy, "~> 2.5", [hex: :cowboy, repo: "hexpm", optional: false]}, {:jsone, "~> 1.5", [hex: :jsone, repo: "hexpm", optional: false]}], "hexpm", "d10a3e193a0f4c88a7a6b41bbb29ec531403ab9edafd8f9ccb04b4f8f4fc992a"},
+}
